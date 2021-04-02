@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Profile } from './profile';
+import { User } from './user';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  profileDetails:string[];
-  
-
-  constructor(){
-    this.profileDetails = ['profilePic', 'username', 'Repositories', 'Followers', 'Follwoing']
-  } 
+ 
+  users:User[]=[
+    {username:'ianmwariri', name:'Ian Mwariri', repositories:7},
+    {username: 'spectre', name:'Spectre', repositories:20 },
+    {username: 'ice', name:'Ice', repositories:45 },
+  ];
+ 
 }
