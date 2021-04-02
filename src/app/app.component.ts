@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Git-Search-App';
+  profileDetails:string[];
+  
+
+  constructor(){
+    this.profileDetails = ['profilePic', 'username', 'Repositories', 'Followers', 'Follwoing']
+  } 
 }
