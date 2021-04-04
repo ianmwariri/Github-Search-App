@@ -9,10 +9,5 @@ import { User } from './user';
 })
 export class AppComponent {
  
-  users:User[]=[
-    {username:'ianmwariri', name:'Ian Mwariri', repositories:7},
-    {username: 'spectre', name:'Spectre', repositories:20 },
-    {username: 'ice', name:'Ice', repositories:45 },
-  ];
  
 }

@@ -1,0 +1,15 @@
+<div>
+  <h1>Github Profile Search</h1>
+  <!-- <p>Find any Github Profile you're looking for!</p> -->
+  <hr>
+  <ul>
+    <div>
+      <li *ngFor='let user of users; let i = index'>
+        {{user.name +" - " +user.repositories +'(' +user.username +')' }}
+        <p>Joining Date: {{user.joinDate|date|uppercase}} ({{user.joinDate|date|uppercase|dateCount}} days ago).</p>
+      </li>
+
+    </div>
+  </ul>
+  <p *ngIf='users.length > 2'>Nice track record of users</p>
+</div>
